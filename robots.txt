@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://choclinton3-ai.github.io/sitemap.xml
+Sitemap: https://choclinton3-ai.github.io/clintondestiny.github.io/sitemap.xml
