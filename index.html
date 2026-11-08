@@ -29,8 +29,11 @@
 </head>
 <body>
 <header class="site-header">
-  <a class="brand brand-logo" href="#top" aria-label="Clinton Destiny home"><span class="logo-horizontal" aria-hidden="true"></span></a>
-  <button class="menu" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand brand-wordmark" href="#top" aria-label="Clinton Destiny home">
+    <span class="brand-mark" aria-hidden="true">CD</span>
+    <span class="brand-name">CLINTON <b>DESTINY</b></span>
+  </a>
+  <button class="menu" aria-label="Open navigation" aria-expanded="false" onclick="document.body.classList.toggle('nav-open');this.setAttribute('aria-expanded',document.body.classList.contains('nav-open'))">☰</button>
   <nav>
     <a href="#about">About</a>
     <a href="#music">Music</a>
@@ -49,36 +52,69 @@
     <h1>Clinton<br><em>Destiny</em></h1>
     <p class="lead">Cameroonian musician, creative entrepreneur and AI technology enthusiast.</p>
     <div class="hero-actions">
-      <a class="button primary" href="#about">Explore the profile</a>
+      <a class="button primary" href="#gallery">Explore the profile</a>
       <a class="button secondary" href="#music">Music</a>
     </div>
   </div>
   <div class="hero-card">
-    <div class="hero-photo"><img src="assets/portrait-1.jpg" alt="Clinton Destiny in traditional Cameroonian attire"></div>
-    <div class="hero-brand"><span class="logo-round" aria-hidden="true"></span></div>
-    <p>Music • Culture • Creativity • Technology</p>
+    <div class="hero-photo">
+      <img src="assets/portrait-1.jpg" alt="Clinton Destiny in traditional Cameroonian attire" width="1024" height="1536" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero-caption">
+      <strong>Music • Culture • Creativity • Technology</strong>
+      <span>Clinton Destiny</span>
+    </div>
   </div>
 </section>
 
 <section id="gallery" class="section gallery-section">
   <div class="section-label">01 / VISUAL PROFILE</div>
   <div class="gallery-intro">
-    <div><h2>Music, culture and professional presence.</h2></div>
-    <div><p>Selected portraits from Clinton Destiny's visual profile. The images are presented as supplied, with the original Clinton Destiny logos used as part of the site identity.</p></div>
+    <div><h2>A clear visual introduction.</h2></div>
+    <div><p>Three portraits present different parts of Clinton Destiny's public profile. The layout keeps the photographs clean, consistent and easy to view on mobile and desktop.</p></div>
   </div>
+
   <div class="portrait-grid">
-    <figure class="portrait-card"><img src="assets/portrait-1.jpg" alt="Clinton Destiny portrait in traditional attire"><figcaption>Traditional and cultural identity</figcaption></figure>
-    <figure class="portrait-card"><div class="sprite-photo sprite-portrait-2" role="img" aria-label="Clinton Destiny portrait in traditional attire"></div><figcaption>Cultural artistic profile</figcaption></figure>
-    <figure class="portrait-card"><div class="sprite-photo sprite-portrait-3" role="img" aria-label="Clinton Destiny professional portrait"></div><figcaption>Professional profile</figcaption></figure>
+    <figure class="portrait-card">
+      <div class="portrait-frame">
+        <img src="assets/portrait-1.jpg" alt="Clinton Destiny in traditional Cameroonian attire" loading="eager" decoding="async">
+      </div>
+      <figcaption>Traditional and cultural identity</figcaption>
+    </figure>
+
+    <figure class="portrait-card">
+      <div class="portrait-frame sprite-photo sprite-portrait-2">
+        <img src="assets/gallery-2.jpg" alt="Clinton Destiny cultural artistic portrait" loading="lazy" decoding="async">
+      </div>
+      <figcaption>Cultural artistic profile</figcaption>
+    </figure>
+
+    <figure class="portrait-card">
+      <div class="portrait-frame sprite-photo sprite-portrait-3">
+        <img src="assets/gallery-2.jpg" alt="Clinton Destiny professional portrait" loading="lazy" decoding="async">
+      </div>
+      <figcaption>Professional profile</figcaption>
+    </figure>
   </div>
-  <div class="logo-row">
-    <div class="logo-card"><span class="logo-round large" aria-hidden="true"></span></div>
-    <div class="logo-card"><span class="logo-horizontal large" aria-hidden="true"></span></div>
+
+  <div class="identity-logos">
+    <div class="logo-showcase">
+      <div class="logo-crop logo-round-crop">
+        <img src="assets/gallery-2.jpg" alt="Clinton Destiny logo" loading="lazy" decoding="async">
+      </div>
+      <p>Clinton Destiny identity mark</p>
+    </div>
+    <div class="logo-showcase">
+      <div class="logo-crop logo-horizontal-crop">
+        <img src="assets/gallery-2.jpg" alt="Clinton Destiny horizontal logo" loading="lazy" decoding="async">
+      </div>
+      <p>Clinton Destiny wordmark</p>
+    </div>
   </div>
 </section>
 
 <section id="about" class="section">
-  <div class="section-label">01 / ABOUT</div>
+  <div class="section-label">02 / ABOUT</div>
   <div class="two-col">
     <div><h2>Clinton Destiny</h2></div>
     <div>
@@ -90,7 +126,7 @@
 </section>
 
 <section id="music" class="section dark">
-  <div class="section-label">02 / MUSIC</div>
+  <div class="section-label">03 / MUSIC</div>
   <div class="two-col">
     <div><h2>Music across genres and traditions.</h2></div>
     <div>
@@ -113,7 +149,7 @@
 </section>
 
 <section id="career" class="section">
-  <div class="section-label">03 / CAREER</div>
+  <div class="section-label">04 / CAREER</div>
   <div class="timeline">
     <article><span>01</span><div><h3>Musical Artist</h3><p>Recording and performing across contemporary, gospel and Cameroonian genres.</p></div></article>
     <article><span>02</span><div><h3>Creative Entrepreneur</h3><p>Developing projects across music, digital creativity, business and media.</p></div></article>
@@ -123,7 +159,7 @@
 </section>
 
 <section id="culture" class="section pink">
-  <div class="section-label">04 / CULTURE & COMMUNITY</div>
+  <div class="section-label">05 / CULTURE & COMMUNITY</div>
   <div class="two-col">
     <div><h2>Culture is part of the work.</h2></div>
     <div>
@@ -134,7 +170,7 @@
 </section>
 
 <section id="technology" class="section">
-  <div class="section-label">05 / TECHNOLOGY</div>
+  <div class="section-label">06 / TECHNOLOGY</div>
   <div class="two-col">
     <div><h2>Building at the intersection of creativity and AI.</h2></div>
     <div>
@@ -148,7 +184,7 @@
 </section>
 
 <section id="recognition" class="section dark">
-  <div class="section-label">06 / RECOGNITION</div>
+  <div class="section-label">07 / RECOGNITION</div>
   <div class="two-col">
     <div><h2>A record of recognition.</h2></div>
     <div class="awards">
@@ -163,7 +199,7 @@
 </section>
 
 <section id="education" class="section">
-  <div class="section-label">07 / EDUCATION</div>
+  <div class="section-label">08 / EDUCATION</div>
   <div class="two-col">
     <div><h2>Continuous learning.</h2></div>
     <div>
