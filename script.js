@@ -1,1 +1,2 @@
+/* GitHub Pages deployment trigger: 2026-11-11 */
 document.getElementById("year").textContent=new Date().getFullYear();document.querySelectorAll(".site-header nav a").forEach(a=>a.addEventListener("click",()=>document.body.classList.remove("nav-open")));
